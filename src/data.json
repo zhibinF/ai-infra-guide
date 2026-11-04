@@ -1,0 +1,1313 @@
+{
+  "updated": "2026-11-04",
+  "source": {
+    "url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+    "title": "AI Infra学习路线",
+    "author": "草帽路飞",
+    "account": "AI Infra Guide",
+    "published_at": "2026-03-30T18:00:00+08:00"
+  },
+  "categories": [
+    {
+      "id": "c2",
+      "title_original": "全景概览：三层架构",
+      "order": 2,
+      "subsections": []
+    },
+    {
+      "id": "c3",
+      "title_original": "第零层：前置知识",
+      "order": 3,
+      "subsections": [
+        {
+          "title_original": "0.1 知识点",
+          "level": 3
+        },
+        {
+          "title_original": "0.2 推荐资料",
+          "level": 3
+        },
+        {
+          "title_original": "0.3 检验标准",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "title_original": "第一层：CUDA编程与算子优化",
+      "order": 4,
+      "subsections": [
+        {
+          "title_original": "1.1 知识点",
+          "level": 3
+        },
+        {
+          "title_original": "1.2 推荐资料",
+          "level": 3
+        },
+        {
+          "title_original": "1.3 检验标准",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "title_original": "第二层：分布式训练",
+      "order": 5,
+      "subsections": [
+        {
+          "title_original": "2.1 知识点",
+          "level": 3
+        },
+        {
+          "title_original": "2.2 推荐资料",
+          "level": 3
+        },
+        {
+          "title_original": "2.3 检验标准",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "title_original": "第三层：推理与部署",
+      "order": 6,
+      "subsections": [
+        {
+          "title_original": "3.1 LLM 推理基础",
+          "level": 3
+        },
+        {
+          "title_original": "3.2 推理引擎",
+          "level": 3
+        },
+        {
+          "title_original": "3.3 量化",
+          "level": 3
+        },
+        {
+          "title_original": "3.4 Speculative Decoding",
+          "level": 3
+        },
+        {
+          "title_original": "3.5 系统架构：Prefill/Decode 解耦",
+          "level": 3
+        },
+        {
+          "title_original": "3.6 性能分析与 Benchmark",
+          "level": 3
+        },
+        {
+          "title_original": "3.7 优化选型决策树",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "title_original": "新人破局指南",
+      "order": 7,
+      "subsections": [
+        {
+          "title_original": "推荐学习路径",
+          "level": 3
+        },
+        {
+          "title_original": "核心思维模型",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "title_original": "参考资料",
+      "order": 8,
+      "subsections": [
+        {
+          "title_original": "论文",
+          "level": 3
+        },
+        {
+          "title_original": "教程与视频",
+          "level": 3
+        },
+        {
+          "title_original": "开源项目与工具",
+          "level": 3
+        },
+        {
+          "title_original": "官方文档",
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "r1",
+      "category_id": "c3",
+      "subsection": "0.2 推荐资料",
+      "type_original": "论文",
+      "title_original": "Attention Is All You Need",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[2]/row[2]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r2",
+      "category_id": "c3",
+      "subsection": "0.2 推荐资料",
+      "type_original": "教程",
+      "title_original": "The Illustrated Transformer (Jay Alammar)",
+      "urls": [
+        "https://jalammar.github.io/illustrated-transformer/"
+      ],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[2]/row[3]",
+      "verification_status": "url_present_in_source_not_fetched"
+    },
+    {
+      "id": "r3",
+      "category_id": "c3",
+      "subsection": "0.2 推荐资料",
+      "type_original": "解读",
+      "title_original": "琳琅阿木：图文详解LLM inference",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[2]/row[4]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r4",
+      "category_id": "c3",
+      "subsection": "0.2 推荐资料",
+      "type_original": "教程",
+      "title_original": "PyTorch 官方教程（60 Minute Blitz）",
+      "urls": [
+        "https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html"
+      ],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[2]/row[5]",
+      "verification_status": "url_present_in_source_not_fetched"
+    },
+    {
+      "id": "r5",
+      "category_id": "c3",
+      "subsection": "0.2 推荐资料",
+      "type_original": "书籍",
+      "title_original": "3Blue1Brown：线性代数的本质（视频系列）",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[2]/row[6]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r6",
+      "category_id": "c3",
+      "subsection": "0.2 推荐资料",
+      "type_original": "教程",
+      "title_original": "MIT 6.S081 / Linux 命令行基础",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[2]/row[7]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r7",
+      "category_id": "c3",
+      "subsection": "0.2 推荐资料",
+      "type_original": "工具",
+      "title_original": "Andrej Karpathy：Let's build GPT from scratch",
+      "urls": [
+        "https://www.youtube.com/watch?v=kCc8FmEb1nY"
+      ],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[2]/row[8]",
+      "verification_status": "url_present_in_source_not_fetched"
+    },
+    {
+      "id": "r8",
+      "category_id": "c3",
+      "subsection": "0.2 推荐资料",
+      "type_original": "官方文档",
+      "title_original": "NVIDIA NCCL 文档",
+      "urls": [
+        "https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/"
+      ],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[2]/row[9]",
+      "verification_status": "url_present_in_source_not_fetched"
+    },
+    {
+      "id": "r9",
+      "category_id": "c3",
+      "subsection": "0.2 推荐资料",
+      "type_original": "教程",
+      "title_original": "NVIDIA Deep Learning Performance Guide",
+      "urls": [
+        "https://docs.nvidia.com/deeplearning/performance/"
+      ],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[2]/row[10]",
+      "verification_status": "url_present_in_source_not_fetched"
+    },
+    {
+      "id": "r10",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "官方文档",
+      "title_original": "NVIDIA GPU 架构白皮书（Ampere / Hopper）",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[2]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r11",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "入门教程",
+      "title_original": "小小将：CUDA编程入门极简教程",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[3]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r12",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "官方文档",
+      "title_original": "NVIDIA CUDA Programming Guide",
+      "urls": [
+        "https://docs.nvidia.com/cuda/cuda-c-programming-guide/"
+      ],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[4]",
+      "verification_status": "url_present_in_source_not_fetched"
+    },
+    {
+      "id": "r13",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "Reduce",
+      "title_original": "PeakCrosser：CUDA Reduce 算子优化",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[5]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r14",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "GEMM",
+      "title_original": "猛猿：从啥也不会到CUDA GEMM优化",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[6]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r15",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "GEMM",
+      "title_original": "MegEngine Bot：CUDA 矩阵乘法终极优化指南",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[7]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r16",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "Softmax",
+      "title_original": "Online normalizer calculation for softmax",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[8]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r17",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "Softmax",
+      "title_original": "OneFlow：如何实现一个高效的Softmax CUDA kernel",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[9]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r18",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "算子融合",
+      "title_original": "成诚：OneFlow是如何做到世界最快深度学习框架的",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[10]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r19",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "Attention",
+      "title_original": "FlashAttention V1 Paper",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[11]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r20",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "Attention",
+      "title_original": "FlashAttention V2 Paper",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[12]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r21",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "Attention",
+      "title_original": "FlashAttention-3 Paper",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[13]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r22",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "Attention",
+      "title_original": "Flash-Decoding 技术报告（Stanford CRFM）",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[14]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r23",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "Attention",
+      "title_original": "FlashInfer Paper + Repo",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[15]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r24",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "解读",
+      "title_original": "猛猿：图解FlashAttention V1/V2 系列",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[16]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r25",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "解读",
+      "title_original": "方佳瑞：深入浅出理解PagedAttention CUDA实现",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[17]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r26",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "编译器",
+      "title_original": "Triton 官方教程",
+      "urls": [
+        "https://triton-lang.org/main/getting-started/tutorials/"
+      ],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[18]",
+      "verification_status": "url_present_in_source_not_fetched"
+    },
+    {
+      "id": "r27",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "编译器",
+      "title_original": "PyTorch profiling torch.compile",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[19]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r28",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "工具",
+      "title_original": "Nsight Systems User Guide",
+      "urls": [
+        "https://docs.nvidia.com/nsight-systems/UserGuide/"
+      ],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[20]",
+      "verification_status": "url_present_in_source_not_fetched"
+    },
+    {
+      "id": "r29",
+      "category_id": "c4",
+      "subsection": "1.2 推荐资料",
+      "type_original": "工具",
+      "title_original": "Nsight Compute Profiling Guide",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[3]/row[21]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r30",
+      "category_id": "c5",
+      "subsection": "2.2 推荐资料",
+      "type_original": "论文",
+      "title_original": "DeepSeek V2 技术报告",
+      "urls": [
+        "https://arxiv.org/abs/2405.04434"
+      ],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[4]/row[2]",
+      "verification_status": "url_present_in_source_not_fetched"
+    },
+    {
+      "id": "r31",
+      "category_id": "c5",
+      "subsection": "2.2 推荐资料",
+      "type_original": "论文",
+      "title_original": "DeepSeekMoE Paper",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[4]/row[3]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r32",
+      "category_id": "c5",
+      "subsection": "2.2 推荐资料",
+      "type_original": "教程",
+      "title_original": "混合专家模型 (MoE) 详解",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[4]/row[4]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r33",
+      "category_id": "c5",
+      "subsection": "2.2 推荐资料",
+      "type_original": "解读",
+      "title_original": "苏剑林：从MHA、MQA、GQA到MLA",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[4]/row[5]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r34",
+      "category_id": "c5",
+      "subsection": "2.2 推荐资料",
+      "type_original": "论文",
+      "title_original": "Megatron-LM Paper",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[4]/row[6]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r35",
+      "category_id": "c5",
+      "subsection": "2.2 推荐资料",
+      "type_original": "论文",
+      "title_original": "ZeRO Paper（DeepSpeed）",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[4]/row[7]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r36",
+      "category_id": "c5",
+      "subsection": "2.2 推荐资料",
+      "type_original": "文档",
+      "title_original": "DeepSpeed 官方文档",
+      "urls": [
+        "https://www.deepspeed.ai/"
+      ],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[4]/row[8]",
+      "verification_status": "url_present_in_source_not_fetched"
+    },
+    {
+      "id": "r37",
+      "category_id": "c5",
+      "subsection": "2.2 推荐资料",
+      "type_original": "文档",
+      "title_original": "PyTorch DDP / FSDP 教程",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[4]/row[9]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r38",
+      "category_id": "c6",
+      "subsection": "3.1 LLM 推理基础",
+      "type_original": "解读",
+      "title_original": "琳琅阿木：图文详解LLM inference——KV Cache",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[5]/row[2]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r39",
+      "category_id": "c6",
+      "subsection": "3.1 LLM 推理基础",
+      "type_original": "综述",
+      "title_original": "Towards Efficient Generative LLM Serving: A Survey",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[5]/row[3]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r40",
+      "category_id": "c6",
+      "subsection": "3.2 推理引擎",
+      "type_original": "论文",
+      "title_original": "vLLM Paper（PagedAttention）",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[7]/row[2]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r41",
+      "category_id": "c6",
+      "subsection": "3.2 推理引擎",
+      "type_original": "源码",
+      "title_original": "vLLM GitHub Repo",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[7]/row[3]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r42",
+      "category_id": "c6",
+      "subsection": "3.2 推理引擎",
+      "type_original": "文档",
+      "title_original": "vLLM 官方文档",
+      "urls": [
+        "https://docs.vllm.ai/"
+      ],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[7]/row[4]",
+      "verification_status": "url_present_in_source_not_fetched"
+    },
+    {
+      "id": "r43",
+      "category_id": "c6",
+      "subsection": "3.2 推理引擎",
+      "type_original": "解读",
+      "title_original": "猛猿：vLLM 源码解析系列（架构/调度器/BlockManager）",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[7]/row[5]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r44",
+      "category_id": "c6",
+      "subsection": "3.2 推理引擎",
+      "type_original": "论文",
+      "title_original": "SGLang Paper",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[7]/row[6]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r45",
+      "category_id": "c6",
+      "subsection": "3.2 推理引擎",
+      "type_original": "源码",
+      "title_original": "SGLang GitHub Repo",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[7]/row[7]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r46",
+      "category_id": "c6",
+      "subsection": "3.2 推理引擎",
+      "type_original": "文档",
+      "title_original": "TensorRT-LLM 官方文档",
+      "urls": [
+        "https://nvidia.github.io/TensorRT-LLM/"
+      ],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[7]/row[8]",
+      "verification_status": "url_present_in_source_not_fetched"
+    },
+    {
+      "id": "r47",
+      "category_id": "c6",
+      "subsection": "3.2 推理引擎",
+      "type_original": "论文",
+      "title_original": "Orca Paper",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[7]/row[9]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r48",
+      "category_id": "c6",
+      "subsection": "3.2 推理引擎",
+      "type_original": "解读",
+      "title_original": "吃果冻不吐果冻皮：Continuous Batching",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[7]/row[10]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r49",
+      "category_id": "c6",
+      "subsection": "3.2 推理引擎",
+      "type_original": "解读",
+      "title_original": "DefTruth：vLLM Prefix Cache 原理图解",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[7]/row[11]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r50",
+      "category_id": "c6",
+      "subsection": "3.3 量化",
+      "type_original": "论文",
+      "title_original": "SmoothQuant Paper",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[8]/row[2]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r51",
+      "category_id": "c6",
+      "subsection": "3.3 量化",
+      "type_original": "论文",
+      "title_original": "GPTQ Paper",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[8]/row[3]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r52",
+      "category_id": "c6",
+      "subsection": "3.3 量化",
+      "type_original": "论文",
+      "title_original": "AWQ Paper",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[8]/row[4]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r53",
+      "category_id": "c6",
+      "subsection": "3.3 量化",
+      "type_original": "论文",
+      "title_original": "KIVI Paper",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[8]/row[5]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r54",
+      "category_id": "c6",
+      "subsection": "3.3 量化",
+      "type_original": "论文",
+      "title_original": "Marlin Paper（FP16xINT4）",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[8]/row[6]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r55",
+      "category_id": "c6",
+      "subsection": "3.3 量化",
+      "type_original": "代码",
+      "title_original": "TensorRT-LLM 量化工具链",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[8]/row[7]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r56",
+      "category_id": "c6",
+      "subsection": "3.3 量化",
+      "type_original": "代码",
+      "title_original": "vLLM 量化支持",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[8]/row[8]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r57",
+      "category_id": "c6",
+      "subsection": "3.4 Speculative Decoding",
+      "type_original": "论文",
+      "title_original": "Speculative Sampling Paper",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[9]/row[2]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r58",
+      "category_id": "c6",
+      "subsection": "3.4 Speculative Decoding",
+      "type_original": "论文",
+      "title_original": "Medusa Paper + Repo",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[9]/row[3]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r59",
+      "category_id": "c6",
+      "subsection": "3.4 Speculative Decoding",
+      "type_original": "论文",
+      "title_original": "EAGLE-2 Paper",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[9]/row[4]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r60",
+      "category_id": "c6",
+      "subsection": "3.4 Speculative Decoding",
+      "type_original": "论文",
+      "title_original": "Block Verification Paper",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[9]/row[5]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r61",
+      "category_id": "c6",
+      "subsection": "3.4 Speculative Decoding",
+      "type_original": "代码",
+      "title_original": "vLLM / TensorRT-LLM 的 Speculative 支持",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[9]/row[6]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r62",
+      "category_id": "c6",
+      "subsection": "3.4 Speculative Decoding",
+      "type_original": "教程",
+      "title_original": "SGLang 结构化输出加速（cFSM）",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[9]/row[7]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r63",
+      "category_id": "c6",
+      "subsection": "3.5 系统架构：Prefill/Decode 解耦",
+      "type_original": "论文",
+      "title_original": "DistServe（OSDI'24）",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[10]/row[2]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r64",
+      "category_id": "c6",
+      "subsection": "3.5 系统架构：Prefill/Decode 解耦",
+      "type_original": "论文",
+      "title_original": "Splitwise（ISCA）",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[10]/row[3]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r65",
+      "category_id": "c6",
+      "subsection": "3.5 系统架构：Prefill/Decode 解耦",
+      "type_original": "论文",
+      "title_original": "TaiChi（2025）",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[10]/row[4]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r66",
+      "category_id": "c6",
+      "subsection": "3.5 系统架构：Prefill/Decode 解耦",
+      "type_original": "教程",
+      "title_original": "Disaggregated Inference: 18 Months Later",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[10]/row[5]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r67",
+      "category_id": "c6",
+      "subsection": "3.5 系统架构：Prefill/Decode 解耦",
+      "type_original": "教程",
+      "title_original": "MLC microserving",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[10]/row[6]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r68",
+      "category_id": "c6",
+      "subsection": "3.6 性能分析与 Benchmark",
+      "type_original": "工具",
+      "title_original": "torch.profiler 文档",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[11]/row[2]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r69",
+      "category_id": "c6",
+      "subsection": "3.6 性能分析与 Benchmark",
+      "type_original": "工具",
+      "title_original": "GenAI-Perf",
+      "urls": [
+        "https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/client/src/c%2B%2B/perf_analyzer/genai-perf/"
+      ],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[11]/row[3]",
+      "verification_status": "url_present_in_source_not_fetched"
+    },
+    {
+      "id": "r70",
+      "category_id": "c6",
+      "subsection": "3.6 性能分析与 Benchmark",
+      "type_original": "工具",
+      "title_original": "Triton Inference Server Quickstart",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[11]/row[4]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r71",
+      "category_id": "c6",
+      "subsection": "3.6 性能分析与 Benchmark",
+      "type_original": "基准",
+      "title_original": "MLPerf Inference（Datacenter）",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[11]/row[5]",
+      "verification_status": "destination_not_matched"
+    },
+    {
+      "id": "r72",
+      "category_id": "c6",
+      "subsection": "3.6 性能分析与 Benchmark",
+      "type_original": "解读",
+      "title_original": "MLPerf Inference v5.0 LLM 任务解读",
+      "urls": [],
+      "source_url": "https://mp.weixin.qq.com/s/oxUBDTd-b1aZnh0jGR5tqw",
+      "source_locator": "table[11]/row[6]",
+      "verification_status": "destination_not_matched"
+    }
+  ],
+  "links": [
+    {
+      "text": "•Attention Is All You Need(Vaswani et al., 2017)",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•Megatron-LM(Shoeybi et al., 2019)",
+      "url": "https://arxiv.org/abs/1909.08053",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•ZeRO: Memory Optimizations Toward Training Trillion Parameter Models(Rajbhandari et al., 2019)",
+      "url": "https://arxiv.org/abs/1910.02054",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•FlashAttention V1(Dao et al., 2022)",
+      "url": "https://arxiv.org/abs/2205.14135",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•FlashAttention V2(Dao, 2023)",
+      "url": "https://arxiv.org/abs/2307.08691",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•FlashAttention-3(Shah et al., 2024)",
+      "url": "https://arxiv.org/abs/2407.08691",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•Flash-Decoding(Stanford CRFM, 2023)",
+      "url": "https://crfm.stanford.edu/2023/10/12/flashdecoding.html",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•FlashInfer(Ye et al., 2025)",
+      "url": "https://arxiv.org/abs/2501.01005",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•vLLM / PagedAttention(Kwon et al., 2023)",
+      "url": "https://arxiv.org/abs/2309.06180",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•SGLang(Zheng et al., 2023)",
+      "url": "https://arxiv.org/abs/2312.07104",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•Orca(Yu et al., 2022)",
+      "url": "https://www.usenix.org/conference/osdi22/presentation/yu",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•DistServe(Zhong et al., OSDI'24)",
+      "url": "https://arxiv.org/abs/2401.09670",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•Splitwise(Patel et al., ISCA 2024)",
+      "url": "https://arxiv.org/abs/2311.18677",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•SmoothQuant(Xiao et al., 2022)",
+      "url": "https://arxiv.org/abs/2211.10438",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•GPTQ(Frantar et al., 2022)",
+      "url": "https://arxiv.org/abs/2210.17323",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•AWQ(Lin et al., 2023)",
+      "url": "https://arxiv.org/abs/2306.00978",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•KIVI(Liu et al., 2024)",
+      "url": "https://arxiv.org/abs/2402.02750",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•Speculative Sampling(Leviathan et al., 2022 / Chen et al., 2023)",
+      "url": "https://arxiv.org/abs/2302.01318",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•Medusa(Cai et al., 2024)",
+      "url": "https://arxiv.org/abs/2401.10774",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•EAGLE-2(Li et al., 2024)",
+      "url": "https://arxiv.org/abs/2406.16858",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•Online normalizer calculation for softmax(Milakov & Gimelshein, 2018)",
+      "url": "https://arxiv.org/abs/1805.02867",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•DeepSeek V2 技术报告",
+      "url": "https://arxiv.org/abs/2405.04434",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•DeepSeekMoE",
+      "url": "https://arxiv.org/abs/2401.06066",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•Towards Efficient Generative LLM Serving: A Survey(CMU)",
+      "url": "https://arxiv.org/abs/2312.15234",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "论文"
+    },
+    {
+      "text": "•The Illustrated Transformer(Jay Alammar)",
+      "url": "https://jalammar.github.io/illustrated-transformer/",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "教程与视频"
+    },
+    {
+      "text": "•3Blue1Brown：线性代数的本质",
+      "url": "https://www.3blue1brown.com/topics/linear-algebra",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "教程与视频"
+    },
+    {
+      "text": "•Andrej Karpathy：Let's build GPT from scratch",
+      "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "教程与视频"
+    },
+    {
+      "text": "•vLLMGitHub",
+      "url": "https://github.com/vllm-project/vllm",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "开源项目与工具"
+    },
+    {
+      "text": "•SGLangGitHub",
+      "url": "https://github.com/sgl-project/sglang",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "开源项目与工具"
+    },
+    {
+      "text": "•DeepSpeedGitHub",
+      "url": "https://github.com/microsoft/DeepSpeed",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "开源项目与工具"
+    },
+    {
+      "text": "•Megatron-LMGitHub",
+      "url": "https://github.com/NVIDIA/Megatron-LM",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "开源项目与工具"
+    },
+    {
+      "text": "•FlashAttentionGitHub",
+      "url": "https://github.com/Dao-AILab/flash-attention",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "开源项目与工具"
+    },
+    {
+      "text": "•FlashInferGitHub",
+      "url": "https://github.com/flashinfer-ai/flashinfer",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "开源项目与工具"
+    },
+    {
+      "text": "•TensorRT-LLMGitHub",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "开源项目与工具"
+    },
+    {
+      "text": "•TritonGitHub",
+      "url": "https://github.com/triton-lang/triton",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "开源项目与工具"
+    },
+    {
+      "text": "•NVIDIA CUDA Programming Guide",
+      "url": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "官方文档"
+    },
+    {
+      "text": "•NVIDIA NCCL 文档",
+      "url": "https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "官方文档"
+    },
+    {
+      "text": "•Nsight Systems User Guide",
+      "url": "https://docs.nvidia.com/nsight-systems/UserGuide/",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "官方文档"
+    },
+    {
+      "text": "•Nsight Compute",
+      "url": "https://docs.nvidia.com/nsight-compute/ProfilingGuide/",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "官方文档"
+    },
+    {
+      "text": "•NVIDIA Deep Learning Performance Guide",
+      "url": "https://docs.nvidia.com/deeplearning/performance/",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "官方文档"
+    },
+    {
+      "text": "•DeepSpeed 官方文档",
+      "url": "https://www.deepspeed.ai/",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "官方文档"
+    },
+    {
+      "text": "•PyTorch 官方教程（60 Minute Blitz）",
+      "url": "https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "官方文档"
+    },
+    {
+      "text": "•PyTorch DDP 教程",
+      "url": "https://pytorch.org/tutorials/intermediate/ddp_tutorial.html",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "官方文档"
+    },
+    {
+      "text": "•PyTorch FSDP 教程",
+      "url": "https://pytorch.org/tutorials/intermediate/FSDP_tutorial.html",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "官方文档"
+    },
+    {
+      "text": "•vLLM 官方文档",
+      "url": "https://docs.vllm.ai/",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "官方文档"
+    },
+    {
+      "text": "•TensorRT-LLM 官方文档",
+      "url": "https://nvidia.github.io/TensorRT-LLM/",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "官方文档"
+    },
+    {
+      "text": "•Triton 官方教程",
+      "url": "https://triton-lang.org/main/getting-started/tutorials/",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "官方文档"
+    },
+    {
+      "text": "•MLPerf Inference",
+      "url": "https://mlcommons.org/benchmarks/inference-datacenter/",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "官方文档"
+    },
+    {
+      "text": "•GenAI-Perf",
+      "url": "https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/client/src/c%2B%2B/perf_analyzer/genai-perf/",
+      "kind": "visible_url",
+      "category_id": "c8",
+      "subsection": "官方文档"
+    }
+  ]
+}

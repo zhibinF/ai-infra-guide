@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://jalammar.github.io/illustrated-transformer/",
+    "status": 200,
+    "final_url": "https://jalammar.github.io/illustrated-transformer/",
+    "note": "HTTP 可达抽查，不代表正文完整或所有设备可用"
+  },
+  {
+    "url": "https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/",
+    "status": 200,
+    "final_url": "https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/",
+    "note": "HTTP 可达抽查，不代表正文完整或所有设备可用"
+  },
+  {
+    "url": "https://arxiv.org/abs/1706.03762",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/1706.03762",
+    "note": "HTTP 可达抽查，不代表正文完整或所有设备可用"
+  }
+]
